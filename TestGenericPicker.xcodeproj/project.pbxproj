@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F23D6AC31B1B525E00F2DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6AC21B1B525E00F2DDF2 /* AppDelegate.swift */; };
-		F23D6AC61B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F23D6AC41B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodeld */; };
 		F23D6AC81B1B525E00F2DDF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6AC71B1B525E00F2DDF2 /* ViewController.swift */; };
 		F23D6ACB1B1B525E00F2DDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D6AC91B1B525E00F2DDF2 /* Main.storyboard */; };
 		F23D6ACD1B1B525E00F2DDF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D6ACC1B1B525E00F2DDF2 /* Images.xcassets */; };
 		F23D6AD01B1B525E00F2DDF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23D6ACE1B1B525E00F2DDF2 /* LaunchScreen.xib */; };
 		F23D6ADC1B1B525E00F2DDF2 /* TestGenericPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6ADB1B1B525E00F2DDF2 /* TestGenericPickerTests.swift */; };
+		F23D6AE61B1B682500F2DDF2 /* GenericPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6AE51B1B682500F2DDF2 /* GenericPickerTableViewCell.swift */; };
+		F23D6AEA1B1DF8C900F2DDF2 /* PickerDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6AE91B1DF8C900F2DDF2 /* PickerDataSourceProtocol.swift */; };
+		F23D6AEC1B1DF8ED00F2DDF2 /* PickerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D6AEB1B1DF8ED00F2DDF2 /* PickerInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,6 @@
 		F23D6ABD1B1B525E00F2DDF2 /* TestGenericPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGenericPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23D6AC11B1B525E00F2DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23D6AC21B1B525E00F2DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F23D6AC51B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestGenericPicker.xcdatamodel; sourceTree = "<group>"; };
 		F23D6AC71B1B525E00F2DDF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F23D6ACA1B1B525E00F2DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F23D6ACC1B1B525E00F2DDF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		F23D6AD51B1B525E00F2DDF2 /* TestGenericPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGenericPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23D6ADA1B1B525E00F2DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23D6ADB1B1B525E00F2DDF2 /* TestGenericPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGenericPickerTests.swift; sourceTree = "<group>"; };
+		F23D6AE51B1B682500F2DDF2 /* GenericPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPickerTableViewCell.swift; sourceTree = "<group>"; };
+		F23D6AE91B1DF8C900F2DDF2 /* PickerDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDataSourceProtocol.swift; sourceTree = "<group>"; };
+		F23D6AEB1B1DF8ED00F2DDF2 /* PickerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,14 @@
 		F23D6ABF1B1B525E00F2DDF2 /* TestGenericPicker */ = {
 			isa = PBXGroup;
 			children = (
+				F23D6AE91B1DF8C900F2DDF2 /* PickerDataSourceProtocol.swift */,
+				F23D6AEB1B1DF8ED00F2DDF2 /* PickerInput.swift */,
+				F23D6AE51B1B682500F2DDF2 /* GenericPickerTableViewCell.swift */,
 				F23D6AC21B1B525E00F2DDF2 /* AppDelegate.swift */,
 				F23D6AC71B1B525E00F2DDF2 /* ViewController.swift */,
 				F23D6AC91B1B525E00F2DDF2 /* Main.storyboard */,
 				F23D6ACC1B1B525E00F2DDF2 /* Images.xcassets */,
 				F23D6ACE1B1B525E00F2DDF2 /* LaunchScreen.xib */,
-				F23D6AC41B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodeld */,
 				F23D6AC01B1B525E00F2DDF2 /* Supporting Files */,
 			);
 			path = TestGenericPicker;
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23D6AEA1B1DF8C900F2DDF2 /* PickerDataSourceProtocol.swift in Sources */,
+				F23D6AEC1B1DF8ED00F2DDF2 /* PickerInput.swift in Sources */,
 				F23D6AC81B1B525E00F2DDF2 /* ViewController.swift in Sources */,
 				F23D6AC31B1B525E00F2DDF2 /* AppDelegate.swift in Sources */,
-				F23D6AC61B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodeld in Sources */,
+				F23D6AE61B1B682500F2DDF2 /* GenericPickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +423,7 @@
 				F23D6AE11B1B525E00F2DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F23D6AE21B1B525E00F2DDF2 /* Build configuration list for PBXNativeTarget "TestGenericPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,21 +432,9 @@
 				F23D6AE41B1B525E00F2DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F23D6AC41B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F23D6AC51B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodel */,
-			);
-			currentVersion = F23D6AC51B1B525E00F2DDF2 /* TestGenericPicker.xcdatamodel */;
-			path = TestGenericPicker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F23D6AB51B1B525E00F2DDF2 /* Project object */;
 }
